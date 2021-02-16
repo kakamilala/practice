@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MebelPlusKzn</title>
+</head>
+<body>
+    <header>
+        <div class="block_logo">MebelPlusKzn</div>
+    </header>
+
+
+    <nav>
+        <a href="#block_about_us"><div class="div_about_us">О нас</div></a>
+        <a href="#block_gallery"><div class="div_gallery">Фото</div></a>
+        <a href="#block_making_an_order"><div class="div_making_an_order">Оформление заказа</div></a>
+        <a href="#contacts"><div class="div_contacts">Контакты</div></a>
+    </nav>
+
+
+    <main>
+        <div id="block_about_us" class="block_about_us">
+            <div class="text_header">О нас</div>
+            <div class="text_content"></div>
+        </div>
+
+        <div class="block_gallery_out">
+        <div  id="block_gallery" class="block_gallery">
+            
+            <div class="text_header">Фото</div>
+
+            <div class="mySlides fade">
+            <img src="Images/furniture/1.jpg">
+            </div>
+  
+            <div class="mySlides fade">
+                <img src="Images/furniture/2.jpg">
+            </div>
+    
+            <div class="mySlides fade">
+                <img src="Images/furniture/3.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/4.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/5.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/6.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/7.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/8.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/9.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/10.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/11.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/12.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/14.jpg">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="Images/furniture/15.jpg">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+        </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "block";
+        }
+        </script>
+
+        <div id="block_making_an_order" class="block_making_an_order">
+            <div class="text_header">Оформление заказа</div>
+            <div class="text_content">
+                <ol>
+                    <li class="main_list">Оставьте завку на заказ любым удобным для вас способом: 
+                        <ul>
+                            <li>звонок по номеру 89625480033</li>
+                            <li>напишите в WhatsApp по номеру 89625480033</li>
+                            <li>напишите в Instagram: mebel_pluskzn</li>
+                        </ul>
+                    </li>
+                    <li class="main_list">Мы с вами обсуждаем общие моменты заказа, приезжаем к вам, делаем замеры мебели и обсуждаем
+                        заказ более детально.<br>
+                        <b>Замеры бесплатно!</b>
+                    </li>
+                    <li class="main_list">Изготовление мебели происходит в среднем около двух недель (сроки изготовления зависят от 
+                        сложности заказа).
+                    </li>
+                    <li class="main_list">Доставка и установка мебели БЕСПЛАТНО.</li>
+                    <li class="main_list">Оплата: предоплата - 50% от стоимости заказа, остальные 50% после установки мебели.</li>
+                </ol>
+            </div>
+        </div>
+    </main>
+
+
+    <footer id="contacts">
+        <div class="text_header">Контакты</div>
+        <a href="https://www.instagram.com/mebel_pluskzn/"><div class="socials"><img src="Images/inst_logo.png"> mebel_pluskzn</div></a>
+        <div>Звонок или WhatsApp: 89625480033 Дамир</div>
+    </footer>   
+</body>
+</html>
